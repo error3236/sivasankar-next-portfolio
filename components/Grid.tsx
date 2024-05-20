@@ -1,3 +1,4 @@
+import { gridItems } from "@/data"
 import { BentoGrid, BentoGridItem } from "./Ui/BentoGrid"
 
 const Grid = () => {
@@ -5,8 +6,19 @@ const Grid = () => {
    <section id="about">
     <BentoGrid>
         {
-            [{title:"Title1",description:"des1"}].map((item, i )=>(
-                <BentoGridItem/>
+            gridItems.map(({id,title,description,className,img,imgClassName,spareImg,titleClassName})=>(
+                <BentoGridItem
+                id={id}
+                key={id}
+                title={title}
+                description={description}
+                className={className}
+                img={img}
+                imgClassName={imgClassName}
+                spareImg={spareImg}
+                titleClassName={titleClassName}
+
+                />
             ))
         }
     </BentoGrid>
