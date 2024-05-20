@@ -212,7 +212,7 @@ export const navItems = [
   
   export const socialMedia = [
     {
-      id: 1,
+      id: 2,
       img: "./git.svg",
     },
     {
