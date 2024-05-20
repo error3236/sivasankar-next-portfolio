@@ -23,7 +23,7 @@ const Hero = () => {
                         Superhero approch to
                         <FlipWords words={["MobileApps", "Web Apps", "Web Pages", "UI/UX Design", "Backend Api",]}  />
                     </div>
-                    <a href="#about" className="py-16"><ShimmerButton title="Show my Work" icon={<FaLocationArrow />} position="left" /> </a>
+                    <a href="#about" className="py-20"><ShimmerButton title="Show my Work" icon={<FaLocationArrow />} position="left" /> </a>
                 </div>
             </div>
         </div>

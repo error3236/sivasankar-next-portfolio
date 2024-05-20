@@ -2,6 +2,9 @@ import { cn } from "@/utils/cn";
 import ShimmerButton from "./ShimmerButton";
 import { tech, techList, techList2 } from "@/data";
 import { ThreeDCard } from "./ThreeDCard";
+import { Globe } from "./Globe";
+import { div } from "three/examples/jsm/nodes/Nodes.js";
+import { GlobeDemo } from "./GridGlobe";
 
 export const BentoGrid = ({
   className,
@@ -105,7 +108,9 @@ export const BentoGridItem = ({
           </div>
 
           {/* for the github 3d globe */}
-
+          {id=== 2 &&(
+           <GlobeDemo></GlobeDemo>
+          ) }
 
           {/* Tech stack list div */}
           {id === 1 && (

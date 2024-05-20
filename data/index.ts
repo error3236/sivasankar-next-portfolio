@@ -8,10 +8,10 @@ export const navItems = [
   export const techList=["./flutter.png","./kotlin.png",,"./node.png","./python.png",];
   export const techList2=["./react.png","./swift.png","./mongo.png","./firebase.png",];
   export const tech=[
-    {img1:"./flutter.png",img2:"./react.png",title1:"Flutter",title2:"React.js",key:1},
+    {img1:"./flutter.png",img2:"./next.png",title1:"Flutter",title2:"Next.js",key:1},
     {img1:"./kotlin.png",img2:"./swift.png",title1:"Kotlin",title2:"Swift",key:2},
-    {img1:"./node.png",img2:"./mongo.png",title1:"Node.js",title2:"MongoDB",key:3},
-    {img1:"./python.png",img2:"./firebase.png",title1:"Python",title2:"Firebase",key:4},
+    {img1:"./node.png",img2:"./python.png",title1:"Node.js",title2:"Python",key:3},
+    {img1:"./mongo.png",img2:"./firebase.png",title1:"MongoDB",title2:"Firebase",key:4},
   ];
  
   export const gridItems = [
@@ -33,7 +33,7 @@ export const navItems = [
       imgClassName: "",
       titleClassName: "justify-start",
       img: "",
-      spareImg: "",
+      spareImg: "./grid.svg",
     },
     {
       id: 3,
