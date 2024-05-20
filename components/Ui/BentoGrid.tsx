@@ -6,8 +6,8 @@ import { Globe } from "./Globe";
 import { div } from "three/examples/jsm/nodes/Nodes.js";
 import { GlobeDemo } from "./GridGlobe";
 import { BackgroundGradientAnimation } from "./GradientBg";
-import Lottie from "react-lottie";
-import { useState } from "react";
+
+
 import animationData from "@/data/confetti.json";
 import { IoCopyOutline } from "react-icons/io5";
 export const BentoGrid = ({
@@ -50,19 +50,10 @@ export const BentoGridItem = ({
 }) => {
   const leftLists = ["Flutter", "Kotlin", "Swift"];
   const rightLists = ["React.js", "NextJS", "MongoDB"];
-  const [copied, setCopied] = useState(false);
-  const defaultOptions = {
-    loop: copied,
-    autoplay: copied,
-    animationData: animationData,
-    rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice",
-    },
-  };
+
+  
   const handleCopy = () => {
-    const text = "sivasankar.sivakripa123@gmail.com";
-    navigator.clipboard.writeText(text);
-    setCopied(true);
+    window.location.href = "mailto:sivasankar.sivakripa123@gmail.com"
   };
   return (
     <div
@@ -133,15 +124,10 @@ export const BentoGridItem = ({
           {id === 6 && (
             <div className="mt-5 relative">
               <div className="absolute -bottom-5 right-0">
-                <Lottie options={defaultOptions} height={200} width={400} />
+                <ShimmerButton icon={<IoCopyOutline />} title="Send Mail" position="left" handleClick={handleCopy}>
+
+                </ShimmerButton>
               </div>
-              <ShimmerButton
-                title={copied ? "Email is Copied!" : "Copy my email address"}
-                icon={<IoCopyOutline />}
-                position="left"
-                handleClick={handleCopy}
-                otherClasses="!bg-[#161A31]"
-              />
             </div>
           )}
           {/* Tech stack list div */}
