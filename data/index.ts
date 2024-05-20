@@ -1,16 +1,17 @@
 export const navItems = [
+  { name: "Home", link: "#hero" },
     { name: "About", link: "#about" },
     { name: "Projects", link: "#projects" },
     { name: "Approch", link: "#approch" },
     { name: "Contact", link: "#contact" },
-    { name: "Home", link: "#hero" },
+    
   ];
   
   export const techList=["./flutter.png","./kotlin.png",,"./node.png","./python.png",];
   export const techList2=["./react.png","./swift.png","./mongo.png","./firebase.png",];
   export const tech=[
     {img1:"./flutter.png",img2:"./next.png",title1:"Flutter",title2:"Next.js",key:1},
-    {img1:"./kotlin.png",img2:"./swift.png",title1:"Kotlin",title2:"Swift",key:2},
+    {img1:"./kotlin.png",img2:"./typescript.png",title1:"Kotlin",title2:"TypeScript",key:2},
     {img1:"./node.png",img2:"./python.png",title1:"Node.js",title2:"Python",key:3},
     {img1:"./mongo.png",img2:"./firebase.png",title1:"MongoDB",title2:"Firebase",key:4},
   ];
@@ -94,16 +95,16 @@ export const navItems = [
       des: "Ensuring your Emergency:an emergency system. Street tablets send video alerts to a central app upon button press. A mobile app lets users find nearby beacons and report emergencies",
       img: "./eye.png",
       iconLists:["./flutter.png", "./firebase.png"],
-      link: "",
+      link: "https://github.com/error3236/SOS-WebApp",
     },
-    // {
-    //   id: 3,
-    //   title: "AI Image SaaS - Canva Application",
-    //   des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
-    //   img: "./p3.svg",
-    //   iconLists: ["./re.svg", "./tail.svg", "./ts.svg", "./three.svg", "./c.svg"],
-    //   link: "https://github.com/adrianhajdin/ai_saas_app",
-    // },
+    {
+      id: 3,
+      title: "Sivasankar | Portfolio",
+      des: "Developed a portfolio to showcase my skills in UI designing and Next.js",
+      img: "./portfolio.png",
+      iconLists: ["next.png","./re.svg", "./tail.svg", "./ts.svg",],
+      link: "https://github.com/error3236/next-portfolio",
+    },
     // {
     //   id: 4,
     //   title: "Animated Apple Iphone 3D Website",

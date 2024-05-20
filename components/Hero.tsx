@@ -28,7 +28,7 @@ const Hero = () => {
                         <TextGenerateEffect className="text-start text-[40px] md:text-5xl lg:text-6xl" words="Hi i'm Sivasankar" />
                         <div className="text-4xl mx-auto font-normal text-neutral-600 dark:text-neutral-400">
                             Superhero approch to
-                            <FlipWords words={["MobileApps", "Web Apps", "Web Pages", "UI/UX Design", "Backend Api",]} />
+                            <FlipWords  words={["MobileApps", "Web Apps", "Web Pages", "UI/UX Design", "Backend Api",]} />
                         </div>
                         <a href="#about" className="py-20"><ShimmerButton title="Let's Go!!" icon={<FaLocationArrow />} position="left" /> </a>
                     </div>

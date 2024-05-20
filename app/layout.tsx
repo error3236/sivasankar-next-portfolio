@@ -6,7 +6,12 @@ import { ThemeProvider } from "./provider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-
+  icons: [
+    {
+      url: "/favicon.ico",
+      type: "image/x-icon",
+    },
+  ],
   title: "Sivasankar | Portfolio",
   description: "Sivasankar next js portfolio",
 };
