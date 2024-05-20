@@ -1,0 +1,377 @@
+[debug] [2024-05-20T11:18:11.090Z] ----------------------------------------------------------------------
+[debug] [2024-05-20T11:18:11.092Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Asus\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2024-05-20T11:18:11.093Z] CLI Version:   12.8.1
+[debug] [2024-05-20T11:18:11.093Z] Platform:      win32
+[debug] [2024-05-20T11:18:11.093Z] Node Version:  v21.5.0
+[debug] [2024-05-20T11:18:11.093Z] Time:          Mon May 20 2024 16:48:11 GMT+0530 (India Standard Time)
+[debug] [2024-05-20T11:18:11.093Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-05-20T11:18:11.165Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-05-20T11:18:11.165Z] > authorizing via signed-in user (sivasankar.sivakripa123@gmail.com)
+[debug] [2024-05-20T11:18:11.165Z] [iam] checking project sivasankar-portfolio-16c4f for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-05-20T11:18:11.167Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/sivasankar-portfolio-16c4f:testIamPermissions [none]
+[debug] [2024-05-20T11:18:11.167Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/sivasankar-portfolio-16c4f:testIamPermissions x-goog-quota-user=projects/sivasankar-portfolio-16c4f
+[debug] [2024-05-20T11:18:11.167Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/sivasankar-portfolio-16c4f:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-05-20T11:18:12.515Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/sivasankar-portfolio-16c4f:testIamPermissions 200
+[debug] [2024-05-20T11:18:12.515Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/sivasankar-portfolio-16c4f:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-05-20T11:18:12.516Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/sivasankar-portfolio-16c4f [none]
+[debug] [2024-05-20T11:18:13.024Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/sivasankar-portfolio-16c4f 200
+[debug] [2024-05-20T11:18:13.024Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/sivasankar-portfolio-16c4f {"projectId":"sivasankar-portfolio-16c4f","projectNumber":"84663046533","displayName":"sivasankar-portfolio","name":"projects/sivasankar-portfolio-16c4f","resources":{"hostingSite":"sivasankar-portfolio-16c4f"},"state":"ACTIVE","etag":"1_072b0f23-87ca-4079-94a7-dab7ad0da158"}
+[debug] [2024-05-20T11:18:16.916Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/sivasankar-portfolio-16c4f/sites pageToken=&pageSize=10
+[debug] [2024-05-20T11:18:17.840Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/sivasankar-portfolio-16c4f/sites 200
+[debug] [2024-05-20T11:18:17.841Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/sivasankar-portfolio-16c4f/sites {"sites":[{"name":"projects/sivasankar-portfolio-16c4f/sites/sivasankar-portfolio-16c4f","defaultUrl":"https://sivasankar-portfolio-16c4f.web.app","appId":"1:84663046533:web:6c921299f61743e1c174ec","type":"DEFAULT_SITE"}]}
+[debug] [2024-05-20T11:18:17.841Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:84663046533:web:6c921299f61743e1c174ec/config [none]
+[debug] [2024-05-20T11:18:18.910Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:84663046533:web:6c921299f61743e1c174ec/config 200
+[debug] [2024-05-20T11:18:18.910Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:84663046533:web:6c921299f61743e1c174ec/config {"projectId":"sivasankar-portfolio-16c4f","appId":"1:84663046533:web:6c921299f61743e1c174ec","storageBucket":"sivasankar-portfolio-16c4f.appspot.com","apiKey":"AIzaSyBMULmUsQnY-fACznD_7Ia2sbyXsnRKZk0","authDomain":"sivasankar-portfolio-16c4f.firebaseapp.com","messagingSenderId":"84663046533"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[info]   ▲ Next.js 14.2.3
+
+[info] 
+
+[info]    Creating an optimized production build ...
+
+[info]  ✓ Compiled successfully
+
+[info]    Linting and checking validity of types ...
+
+[info] 
+Failed to compile.
+
+[info] 
+./components/Footer.tsx
+15:17  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+45:23  Error: Missing "key" prop for element in iterator  react/jsx-key
+51:29  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+./components/RecentProjects.tsx
+36:25  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+38:23  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+69:29  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+./components/Ui/3DCard.tsx
+125:6  Warning: React Hook useEffect has a missing dependency: 'handleAnimations'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+
+./components/Ui/BentoGrid.tsx
+83:13  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+95:13  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+./components/Ui/CanvasReveal.tsx
+282:6  Warning: React Hook useMemo has a missing dependency: 'getUniforms'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+
+./components/Ui/FlipWords.tsx
+24:6  Warning: React Hook useEffect has a missing dependency: 'startAnimation'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+
+./components/Ui/Globe.tsx
+99:6  Warning: React Hook useEffect has missing dependencies: '_buildData' and '_buildMaterial'. Either include them or remove the dependency array. Mutable values like 'globeRef.current' aren't valid dependencies because mutating them doesn't re-render the component.  react-hooks/exhaustive-deps
+165:6  Warning: React Hook useEffect has missing dependencies: 'defaultProps.atmosphereAltitude', 'defaultProps.atmosphereColor', 'defaultProps.polygonColor', 'defaultProps.showAtmosphere', and 'startAnimation'. Either include them or remove the dependency array.  react-hooks/exhaustive-deps
+224:6  Warning: React Hook useEffect has a missing dependency: 'data.length'. Either include it or remove the dependency array. Mutable values like 'globeRef.current' aren't valid dependencies because mutating them doesn't re-render the component.  react-hooks/exhaustive-deps
+240:6  Warning: React Hook useEffect has missing dependencies: 'gl', 'size.height', and 'size.width'. Either include them or remove the dependency array.  react-hooks/exhaustive-deps
+
+./components/Ui/GradientBg.tsx
+58:6  Warning: React Hook useEffect has missing dependencies: 'blendingValue', 'fifthColor', 'firstColor', 'fourthColor', 'gradientBackgroundEnd', 'gradientBackgroundStart', 'pointerColor', 'secondColor', 'size', and 'thirdColor'. Either include them or remove the dependency array.  react-hooks/exhaustive-deps
+73:6  Warning: React Hook useEffect has missing dependencies: 'curX' and 'curY'. Either include them or remove the dependency array. You can also do a functional update 'setCurX(c => ...)' if you only need 'curX' in the 'setCurX' call.  react-hooks/exhaustive-deps
+
+./components/Ui/TextGenerateEffect.tsx
+26:6  Warning: React Hook useEffect has a missing dependency: 'animate'. Either include it or remove the dependency array. Mutable values like 'scope.current' aren't valid dependencies because mutating them doesn't re-render the component.  react-hooks/exhaustive-deps
+
+./components/Ui/ThreeDCard.tsx
+28:21  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+39:21  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+info  - Need to disable some ESLint rules? Learn more here: https://nextjs.org/docs/basic-features/eslint#disabling-rules
+
+[debug] [2024-05-20T11:18:55.700Z] Error: ENOENT: no such file or directory, open 'C:\Users\Asus\Desktop\Sivasankar\siva\.next\export-marker.json'
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-05-20T14:18:33.000Z] ----------------------------------------------------------------------
+[debug] [2024-05-20T14:18:33.002Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Asus\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2024-05-20T14:18:33.002Z] CLI Version:   12.8.1
+[debug] [2024-05-20T14:18:33.003Z] Platform:      win32
+[debug] [2024-05-20T14:18:33.003Z] Node Version:  v21.5.0
+[debug] [2024-05-20T14:18:33.003Z] Time:          Mon May 20 2024 19:48:33 GMT+0530 (India Standard Time)
+[debug] [2024-05-20T14:18:33.003Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-05-20T14:18:33.075Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-05-20T14:18:33.075Z] > authorizing via signed-in user (sivasankar.sivakripa123@gmail.com)
+[debug] [2024-05-20T14:18:33.075Z] [iam] checking project sivasankar-portfolio-16c4f for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-05-20T14:18:33.077Z] > refreshing access token with scopes: []
+[debug] [2024-05-20T14:18:33.078Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-05-20T14:18:33.078Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-05-20T14:18:33.317Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2024-05-20T14:18:33.318Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-05-20T14:18:33.325Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/sivasankar-portfolio-16c4f:testIamPermissions [none]
+[debug] [2024-05-20T14:18:33.326Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/sivasankar-portfolio-16c4f:testIamPermissions x-goog-quota-user=projects/sivasankar-portfolio-16c4f
+[debug] [2024-05-20T14:18:33.326Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/sivasankar-portfolio-16c4f:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-05-20T14:18:34.613Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/sivasankar-portfolio-16c4f:testIamPermissions 200
+[debug] [2024-05-20T14:18:34.614Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/sivasankar-portfolio-16c4f:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-05-20T14:18:34.614Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/sivasankar-portfolio-16c4f [none]
+[debug] [2024-05-20T14:18:35.296Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/sivasankar-portfolio-16c4f 200
+[debug] [2024-05-20T14:18:35.296Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/sivasankar-portfolio-16c4f {"projectId":"sivasankar-portfolio-16c4f","projectNumber":"84663046533","displayName":"sivasankar-portfolio","name":"projects/sivasankar-portfolio-16c4f","resources":{"hostingSite":"sivasankar-portfolio-16c4f"},"state":"ACTIVE","etag":"1_072b0f23-87ca-4079-94a7-dab7ad0da158"}
+[debug] [2024-05-20T14:18:39.266Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/sivasankar-portfolio-16c4f/sites pageToken=&pageSize=10
+[debug] [2024-05-20T14:18:40.357Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/sivasankar-portfolio-16c4f/sites 200
+[debug] [2024-05-20T14:18:40.357Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/sivasankar-portfolio-16c4f/sites {"sites":[{"name":"projects/sivasankar-portfolio-16c4f/sites/sivasankar-portfolio-16c4f","defaultUrl":"https://sivasankar-portfolio-16c4f.web.app","appId":"1:84663046533:web:6c921299f61743e1c174ec","type":"DEFAULT_SITE"}]}
+[debug] [2024-05-20T14:18:40.357Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:84663046533:web:6c921299f61743e1c174ec/config [none]
+[debug] [2024-05-20T14:18:41.533Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:84663046533:web:6c921299f61743e1c174ec/config 200
+[debug] [2024-05-20T14:18:41.534Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:84663046533:web:6c921299f61743e1c174ec/config {"projectId":"sivasankar-portfolio-16c4f","appId":"1:84663046533:web:6c921299f61743e1c174ec","storageBucket":"sivasankar-portfolio-16c4f.appspot.com","apiKey":"AIzaSyBMULmUsQnY-fACznD_7Ia2sbyXsnRKZk0","authDomain":"sivasankar-portfolio-16c4f.firebaseapp.com","messagingSenderId":"84663046533"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[info]   ▲ Next.js 14.2.3
+
+[info] 
+
+[info]    Creating an optimized production build ...
+
+[info] uncaughtException [Error: EPERM: operation not permitted, open 'C:\Users\Asus\Desktop\Sivasankar\siva\.next\trace'] {
+  errno: -4048,
+  code: 'EPERM',
+  syscall: 'open',
+  path: 'C:\\Users\\Asus\\Desktop\\Sivasankar\\siva\\.next\\trace'
+}
+
+[debug] [2024-05-20T14:19:03.907Z] Error: ENOENT: no such file or directory, open 'C:\Users\Asus\Desktop\Sivasankar\siva\.next\export-marker.json'
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-05-20T14:22:00.067Z] ----------------------------------------------------------------------
+[debug] [2024-05-20T14:22:00.070Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Asus\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2024-05-20T14:22:00.070Z] CLI Version:   12.8.1
+[debug] [2024-05-20T14:22:00.071Z] Platform:      win32
+[debug] [2024-05-20T14:22:00.071Z] Node Version:  v21.5.0
+[debug] [2024-05-20T14:22:00.071Z] Time:          Mon May 20 2024 19:52:00 GMT+0530 (India Standard Time)
+[debug] [2024-05-20T14:22:00.071Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-05-20T14:22:00.142Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-05-20T14:22:00.142Z] > authorizing via signed-in user (sivasankar.sivakripa123@gmail.com)
+[debug] [2024-05-20T14:22:00.142Z] [iam] checking project sivasankar-portfolio-16c4f for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-05-20T14:22:00.144Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/sivasankar-portfolio-16c4f:testIamPermissions [none]
+[debug] [2024-05-20T14:22:00.145Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/sivasankar-portfolio-16c4f:testIamPermissions x-goog-quota-user=projects/sivasankar-portfolio-16c4f
+[debug] [2024-05-20T14:22:00.145Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/sivasankar-portfolio-16c4f:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-05-20T14:22:00.534Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/sivasankar-portfolio-16c4f:testIamPermissions 200
+[debug] [2024-05-20T14:22:00.534Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/sivasankar-portfolio-16c4f:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-05-20T14:22:00.535Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/sivasankar-portfolio-16c4f [none]
+[debug] [2024-05-20T14:22:00.945Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/sivasankar-portfolio-16c4f 200
+[debug] [2024-05-20T14:22:00.945Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/sivasankar-portfolio-16c4f {"projectId":"sivasankar-portfolio-16c4f","projectNumber":"84663046533","displayName":"sivasankar-portfolio","name":"projects/sivasankar-portfolio-16c4f","resources":{"hostingSite":"sivasankar-portfolio-16c4f"},"state":"ACTIVE","etag":"1_072b0f23-87ca-4079-94a7-dab7ad0da158"}
+[debug] [2024-05-20T14:22:04.981Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/sivasankar-portfolio-16c4f/sites pageToken=&pageSize=10
+[debug] [2024-05-20T14:22:06.061Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/sivasankar-portfolio-16c4f/sites 200
+[debug] [2024-05-20T14:22:06.061Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/sivasankar-portfolio-16c4f/sites {"sites":[{"name":"projects/sivasankar-portfolio-16c4f/sites/sivasankar-portfolio-16c4f","defaultUrl":"https://sivasankar-portfolio-16c4f.web.app","appId":"1:84663046533:web:6c921299f61743e1c174ec","type":"DEFAULT_SITE"}]}
+[debug] [2024-05-20T14:22:06.061Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:84663046533:web:6c921299f61743e1c174ec/config [none]
+[debug] [2024-05-20T14:22:06.977Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:84663046533:web:6c921299f61743e1c174ec/config 200
+[debug] [2024-05-20T14:22:06.977Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:84663046533:web:6c921299f61743e1c174ec/config {"projectId":"sivasankar-portfolio-16c4f","appId":"1:84663046533:web:6c921299f61743e1c174ec","storageBucket":"sivasankar-portfolio-16c4f.appspot.com","apiKey":"AIzaSyBMULmUsQnY-fACznD_7Ia2sbyXsnRKZk0","authDomain":"sivasankar-portfolio-16c4f.firebaseapp.com","messagingSenderId":"84663046533"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[info]   ▲ Next.js 14.2.3
+
+[info] 
+
+[debug] [2024-05-20T14:23:37.690Z] ----------------------------------------------------------------------
+[debug] [2024-05-20T14:23:37.693Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Asus\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2024-05-20T14:23:37.694Z] CLI Version:   12.8.1
+[debug] [2024-05-20T14:23:37.694Z] Platform:      win32
+[debug] [2024-05-20T14:23:37.694Z] Node Version:  v21.5.0
+[debug] [2024-05-20T14:23:37.694Z] Time:          Mon May 20 2024 19:53:37 GMT+0530 (India Standard Time)
+[debug] [2024-05-20T14:23:37.695Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-05-20T14:23:37.762Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-05-20T14:23:37.762Z] > authorizing via signed-in user (sivasankar.sivakripa123@gmail.com)
+[debug] [2024-05-20T14:23:37.763Z] [iam] checking project sivasankar-portfolio-16c4f for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-05-20T14:23:37.764Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/sivasankar-portfolio-16c4f:testIamPermissions [none]
+[debug] [2024-05-20T14:23:37.765Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/sivasankar-portfolio-16c4f:testIamPermissions x-goog-quota-user=projects/sivasankar-portfolio-16c4f
+[debug] [2024-05-20T14:23:37.765Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/sivasankar-portfolio-16c4f:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-05-20T14:23:39.131Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/sivasankar-portfolio-16c4f:testIamPermissions 200
+[debug] [2024-05-20T14:23:39.131Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/sivasankar-portfolio-16c4f:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-05-20T14:23:39.132Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/sivasankar-portfolio-16c4f [none]
+[debug] [2024-05-20T14:23:39.631Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/sivasankar-portfolio-16c4f 200
+[debug] [2024-05-20T14:23:39.631Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/sivasankar-portfolio-16c4f {"projectId":"sivasankar-portfolio-16c4f","projectNumber":"84663046533","displayName":"sivasankar-portfolio","name":"projects/sivasankar-portfolio-16c4f","resources":{"hostingSite":"sivasankar-portfolio-16c4f"},"state":"ACTIVE","etag":"1_072b0f23-87ca-4079-94a7-dab7ad0da158"}
+[debug] [2024-05-20T14:23:43.683Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/sivasankar-portfolio-16c4f/sites pageToken=&pageSize=10
+[debug] [2024-05-20T14:23:44.701Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/sivasankar-portfolio-16c4f/sites 200
+[debug] [2024-05-20T14:23:44.701Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/sivasankar-portfolio-16c4f/sites {"sites":[{"name":"projects/sivasankar-portfolio-16c4f/sites/sivasankar-portfolio-16c4f","defaultUrl":"https://sivasankar-portfolio-16c4f.web.app","appId":"1:84663046533:web:6c921299f61743e1c174ec","type":"DEFAULT_SITE"}]}
+[debug] [2024-05-20T14:23:44.702Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:84663046533:web:6c921299f61743e1c174ec/config [none]
+[debug] [2024-05-20T14:23:45.721Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:84663046533:web:6c921299f61743e1c174ec/config 200
+[debug] [2024-05-20T14:23:45.721Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:84663046533:web:6c921299f61743e1c174ec/config {"projectId":"sivasankar-portfolio-16c4f","appId":"1:84663046533:web:6c921299f61743e1c174ec","storageBucket":"sivasankar-portfolio-16c4f.appspot.com","apiKey":"AIzaSyBMULmUsQnY-fACznD_7Ia2sbyXsnRKZk0","authDomain":"sivasankar-portfolio-16c4f.firebaseapp.com","messagingSenderId":"84663046533"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[info]   ▲ Next.js 14.2.3
+
+[info] 
+
+[info]    Creating an optimized production build ...
+
+[info]  ✓ Compiled successfully
+
+[info]    Linting and checking validity of types ...
+
+[info] 
+Failed to compile.
+
+[info] 
+./components/Footer.tsx
+15:17  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+45:23  Error: Missing "key" prop for element in iterator  react/jsx-key
+51:29  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+./components/RecentProjects.tsx
+36:25  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+38:23  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+69:29  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+./components/Ui/3DCard.tsx
+125:6  Warning: React Hook useEffect has a missing dependency: 'handleAnimations'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+
+./components/Ui/BentoGrid.tsx
+83:13  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+95:13  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+./components/Ui/CanvasReveal.tsx
+282:6  Warning: React Hook useMemo has a missing dependency: 'getUniforms'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+
+./components/Ui/FlipWords.tsx
+24:6  Warning: React Hook useEffect has a missing dependency: 'startAnimation'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+
+./components/Ui/Globe.tsx
+99:6  Warning: React Hook useEffect has missing dependencies: '_buildData' and '_buildMaterial'. Either include them or remove the dependency array. Mutable values like 'globeRef.current' aren't valid dependencies because mutating them doesn't re-render the component.  react-hooks/exhaustive-deps
+165:6  Warning: React Hook useEffect has missing dependencies: 'defaultProps.atmosphereAltitude', 'defaultProps.atmosphereColor', 'defaultProps.polygonColor', 'defaultProps.showAtmosphere', and 'startAnimation'. Either include them or remove the dependency array.  react-hooks/exhaustive-deps
+224:6  Warning: React Hook useEffect has a missing dependency: 'data.length'. Either include it or remove the dependency array. Mutable values like 'globeRef.current' aren't valid dependencies because mutating them doesn't re-render the component.  react-hooks/exhaustive-deps
+240:6  Warning: React Hook useEffect has missing dependencies: 'gl', 'size.height', and 'size.width'. Either include them or remove the dependency array.  react-hooks/exhaustive-deps
+
+./components/Ui/GradientBg.tsx
+58:6  Warning: React Hook useEffect has missing dependencies: 'blendingValue', 'fifthColor', 'firstColor', 'fourthColor', 'gradientBackgroundEnd', 'gradientBackgroundStart', 'pointerColor', 'secondColor', 'size', and 'thirdColor'. Either include them or remove the dependency array.  react-hooks/exhaustive-deps
+73:6  Warning: React Hook useEffect has missing dependencies: 'curX' and 'curY'. Either include them or remove the dependency array. You can also do a functional update 'setCurX(c => ...)' if you only need 'curX' in the 'setCurX' call.  react-hooks/exhaustive-deps
+
+./components/Ui/TextGenerateEffect.tsx
+26:6  Warning: React Hook useEffect has a missing dependency: 'animate'. Either include it or remove the dependency array. Mutable values like 'scope.current' aren't valid dependencies because mutating them doesn't re-render the component.  react-hooks/exhaustive-deps
+
+./components/Ui/ThreeDCard.tsx
+28:21  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+39:21  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+info  - Need to disable some ESLint rules? Learn more here: https://nextjs.org/docs/basic-features/eslint#disabling-rules
+
+[debug] [2024-05-20T14:24:10.749Z] Error: ENOENT: no such file or directory, open 'C:\Users\Asus\Desktop\Sivasankar\siva\.next\export-marker.json'
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-05-20T14:26:50.739Z] ----------------------------------------------------------------------
+[debug] [2024-05-20T14:26:50.742Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Asus\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2024-05-20T14:26:50.742Z] CLI Version:   12.8.1
+[debug] [2024-05-20T14:26:50.742Z] Platform:      win32
+[debug] [2024-05-20T14:26:50.742Z] Node Version:  v21.5.0
+[debug] [2024-05-20T14:26:50.742Z] Time:          Mon May 20 2024 19:56:50 GMT+0530 (India Standard Time)
+[debug] [2024-05-20T14:26:50.743Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-05-20T14:26:50.812Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-05-20T14:26:50.812Z] > authorizing via signed-in user (sivasankar.sivakripa123@gmail.com)
+[debug] [2024-05-20T14:26:50.812Z] [iam] checking project sivasankar-portfolio-16c4f for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-05-20T14:26:50.814Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/sivasankar-portfolio-16c4f:testIamPermissions [none]
+[debug] [2024-05-20T14:26:50.814Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/sivasankar-portfolio-16c4f:testIamPermissions x-goog-quota-user=projects/sivasankar-portfolio-16c4f
+[debug] [2024-05-20T14:26:50.814Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/sivasankar-portfolio-16c4f:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-05-20T14:26:52.142Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/sivasankar-portfolio-16c4f:testIamPermissions 200
+[debug] [2024-05-20T14:26:52.142Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/sivasankar-portfolio-16c4f:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-05-20T14:26:52.143Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/sivasankar-portfolio-16c4f [none]
+[debug] [2024-05-20T14:26:52.528Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/sivasankar-portfolio-16c4f 200
+[debug] [2024-05-20T14:26:52.528Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/sivasankar-portfolio-16c4f {"projectId":"sivasankar-portfolio-16c4f","projectNumber":"84663046533","displayName":"sivasankar-portfolio","name":"projects/sivasankar-portfolio-16c4f","resources":{"hostingSite":"sivasankar-portfolio-16c4f"},"state":"ACTIVE","etag":"1_072b0f23-87ca-4079-94a7-dab7ad0da158"}
+[debug] [2024-05-20T14:26:56.329Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/sivasankar-portfolio-16c4f/sites pageToken=&pageSize=10
+[debug] [2024-05-20T14:26:57.347Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/sivasankar-portfolio-16c4f/sites 200
+[debug] [2024-05-20T14:26:57.347Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/sivasankar-portfolio-16c4f/sites {"sites":[{"name":"projects/sivasankar-portfolio-16c4f/sites/sivasankar-portfolio-16c4f","defaultUrl":"https://sivasankar-portfolio-16c4f.web.app","appId":"1:84663046533:web:6c921299f61743e1c174ec","type":"DEFAULT_SITE"}]}
+[debug] [2024-05-20T14:26:57.348Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:84663046533:web:6c921299f61743e1c174ec/config [none]
+[debug] [2024-05-20T14:26:58.417Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:84663046533:web:6c921299f61743e1c174ec/config 200
+[debug] [2024-05-20T14:26:58.418Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:84663046533:web:6c921299f61743e1c174ec/config {"projectId":"sivasankar-portfolio-16c4f","appId":"1:84663046533:web:6c921299f61743e1c174ec","storageBucket":"sivasankar-portfolio-16c4f.appspot.com","apiKey":"AIzaSyBMULmUsQnY-fACznD_7Ia2sbyXsnRKZk0","authDomain":"sivasankar-portfolio-16c4f.firebaseapp.com","messagingSenderId":"84663046533"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[info]   ▲ Next.js 14.2.3
+
+[info] 
+
+[info]    Creating an optimized production build ...
+
+[info]  ✓ Compiled successfully
+
+[info]    Skipping validation of types
+   Linting ...
+
+[info] 
+Failed to compile.
+
+./components/Footer.tsx
+15:17  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+45:23  Error: Missing "key" prop for element in iterator  react/jsx-key
+51:29  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+./components/RecentProjects.tsx
+36:25  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+38:23  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+69:29  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+./components/Ui/3DCard.tsx
+125:6  Warning: React Hook useEffect has a missing dependency: 'handleAnimations'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+
+./components/Ui/BentoGrid.tsx
+83:13  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+95:13  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+./components/Ui/CanvasReveal.tsx
+282:6  Warning: React Hook useMemo has a missing dependency: 'getUniforms'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+
+./components/Ui/FlipWords.tsx
+24:6  Warning: React Hook useEffect has a missing dependency: 'startAnimation'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+
+./components/Ui/Globe.tsx
+99:6  Warning: React Hook useEffect has missing dependencies: '_buildData' and '_buildMaterial'. Either include them or remove the dependency array. Mutable values like 'globeRef.current' aren't valid dependencies because mutating them doesn't re-render the component.  react-hooks/exhaustive-deps
+165:6  Warning: React Hook useEffect has missing dependencies: 'defaultProps.atmosphereAltitude', 'defaultProps.atmosphereColor', 'defaultProps.polygonColor', 'defaultProps.showAtmosphere', and 'startAnimation'. Either include them or remove the dependency array.  react-hooks/exhaustive-deps
+224:6  Warning: React Hook useEffect has a missing dependency: 'data.length'. Either include it or remove the dependency array. Mutable values like 'globeRef.current' aren't valid dependencies because mutating them doesn't re-render the component.  react-hooks/exhaustive-deps
+240:6  Warning: React Hook useEffect has missing dependencies: 'gl', 'size.height', and 'size.width'. Either include them or remove the dependency array.  react-hooks/exhaustive-deps
+
+./components/Ui/GradientBg.tsx
+58:6  Warning: React Hook useEffect has missing dependencies: 'blendingValue', 'fifthColor', 'firstColor', 'fourthColor', 'gradientBackgroundEnd', 'gradientBackgroundStart', 'pointerColor', 'secondColor', 'size', and 'thirdColor'. Either include them or remove the dependency array.  react-hooks/exhaustive-deps
+73:6  Warning: React Hook useEffect has missing dependencies: 'curX' and 'curY'. Either include them or remove the dependency array. You can also do a functional update 'setCurX(c => ...)' if you only need 'curX' in the 'setCurX' call.  react-hooks/exhaustive-deps
+
+./components/Ui/TextGenerateEffect.tsx
+26:6  Warning: React Hook useEffect has a missing dependency: 'animate'. Either include it or remove the dependency array. Mutable values like 'scope.current' aren't valid dependencies because mutating them doesn't re-render the component.  react-hooks/exhaustive-deps
+
+./components/Ui/ThreeDCard.tsx
+28:21  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+39:21  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+info  - Need to disable some ESLint rules? Learn more here: https://nextjs.org/docs/basic-features/eslint#disabling-rules
+
+[debug] [2024-05-20T14:27:18.079Z] Error: ENOENT: no such file or directory, open 'C:\Users\Asus\Desktop\Sivasankar\siva\.next\export-marker.json'
+[error] 
+[error] Error: An unexpected error has occurred.
