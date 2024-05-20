@@ -5,7 +5,11 @@ import { ThreeDCard } from "./ThreeDCard";
 import { Globe } from "./Globe";
 import { div } from "three/examples/jsm/nodes/Nodes.js";
 import { GlobeDemo } from "./GridGlobe";
-
+import { BackgroundGradientAnimation } from "./GradientBg";
+import Lottie from "react-lottie";
+import { useState } from "react";
+import animationData from "@/data/confetti.json";
+import { IoCopyOutline } from "react-icons/io5";
 export const BentoGrid = ({
   className,
   children,
@@ -46,8 +50,20 @@ export const BentoGridItem = ({
 }) => {
   const leftLists = ["Flutter", "Kotlin", "Swift"];
   const rightLists = ["React.js", "NextJS", "MongoDB"];
-
-
+  const [copied, setCopied] = useState(false);
+  const defaultOptions = {
+    loop: copied,
+    autoplay: copied,
+    animationData: animationData,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
+  const handleCopy = () => {
+    const text = "hsu@jsmastery.pro";
+    navigator.clipboard.writeText(text);
+    setCopied(true);
+  };
   return (
     <div
       className={cn(
@@ -84,7 +100,11 @@ export const BentoGridItem = ({
             />
           )}
         </div>
-
+        {id === 6 && (
+          <BackgroundGradientAnimation>
+            <div className="absolute z-50 inset-0 flex items-center justify-center text-white font-bold px-4 pointer-events-none text-3xl text-center md:text-4xl lg:text-7xl"></div>
+          </BackgroundGradientAnimation>
+        )}
 
         <div
           className={cn(
@@ -100,28 +120,41 @@ export const BentoGridItem = ({
           {/* remove mb-2 mt-2 */}
 
           <div
-          
-         className={id == 1?` text-transparent font-sans text-2xl lg:text-5xl max-w-96 font-bold z-10 bg-gradient-to-r from-purple via-blue-600 to-indigo-400 bg-clip-text`:'font-sans text-lg lg:text-3xl max-w-96 font-bold z-10 '}
+
+            className={id == 1 ? ` text-transparent font-sans text-2xl lg:text-5xl max-w-96 font-bold z-10 bg-gradient-to-r from-purple via-blue-600 to-indigo-400 bg-clip-text` : 'font-sans text-lg lg:text-3xl max-w-96 font-bold z-10 '}
           >
-            
+
             {title}
           </div>
 
           {/* for the github 3d globe */}
-          {id=== 2 &&(
-           <GlobeDemo></GlobeDemo>
-          ) }
-
+          {id === 2 && (
+            <GlobeDemo></GlobeDemo>
+          )}
+          {id === 6 && (
+            <div className="mt-5 relative">
+              <div className="absolute -bottom-5 right-0">
+                <Lottie options={defaultOptions} height={200} width={400} />
+              </div>
+              <ShimmerButton
+                title={copied ? "Email is Copied!" : "Copy my email address"}
+                icon={<IoCopyOutline />}
+                position="left"
+                handleClick={handleCopy}
+                otherClasses="!bg-[#161A31]"
+              />
+            </div>
+          )}
           {/* Tech stack list div */}
           {id === 1 && (
-            
+
             <div className="  flex-col">
-              
+
               {/* tech stack lists */}
               <div className="flex gap-2  lg:gap-5 ">
-                {tech.map(({key,img1,img2,title1,title2}) => (
+                {tech.map(({ key, img1, img2, title1, title2 }) => (
 
-                  <ThreeDCard img1={img1} img2={img2} title={title1} description={title2} imgClassName="h-12 "key={key}/>
+                  <ThreeDCard img1={img1} img2={img2} title={title1} description={title2} imgClassName="h-12 " key={key} />
 
 
                 ))}
