@@ -81,8 +81,33 @@ export const navItems = [
   ];
   
   export const projects = [
+    
     {
       id: 1,
+      title: "Deep Face Detection Model",
+      des: "Developed a deep learning-based face detection model using Python and TensorFlow. The model was trained on a dataset of facial images to accuratelyidentify and locate faces in real-time. This project provided hands-onexperience with deep learning concepts and TensorFlow. ",
+      img: "./diabetes.png",
+      iconLists: ["./python.png","./tensor.png"],
+      link: "",
+    },
+    {
+      id: 2,
+      title: "Athena",
+      des: "Developed a machine learning model using Python and libraries like NumPy, Pandas, StandardScaler , and scikit-learn to predict diabetesbased on input data. The model was trained on a dataset of relevantfeatures to accurately classify individuals as diabetic or non-diabetic. Thisproject served as a valuable learning experience in applying machinelearning techniques to real-world problems.",
+      img: "./athena.png",
+      iconLists: ["./flutter.png","./gemini.png"],
+      link: "",
+    },
+    {
+      id: 3,
+      title: "Diabetes Prediction Model",
+      des: "Developed a machine learning model using Python and libraries like NumPy, Pandas, StandardScaler , and scikit-learn to predict diabetesbased on input data. The model was trained on a dataset of relevantfeatures to accurately classify individuals as diabetic or non-diabetic. Thisproject served as a valuable learning experience in applying machinelearning techniques to real-world problems.",
+      img: "./diabetes.png",
+      iconLists: ["./python.png","./numpy.png"],
+      link: "",
+    },
+    {
+      id: 4,
       title: "Space",
       des: "An anonymous chat mobile app, book,Users can join dynamic conversations in user-createdrandom spaces, fostering a sense of connection without revealing identities",
       img: "./space.png",
@@ -90,7 +115,7 @@ export const navItems = [
       link: "https://github.com/error3236/Space",
     },
     {
-      id: 2,
+      id: 5,
       title: "EYE",
       des: "Ensuring your Emergency:an emergency system. Street tablets send video alerts to a central app upon button press. A mobile app lets users find nearby beacons and report emergencies",
       img: "./eye.png",
@@ -98,21 +123,14 @@ export const navItems = [
       link: "https://github.com/error3236/SOS-WebApp",
     },
     {
-      id: 3,
+      id: 6,
       title: "Sivasankar | Portfolio",
       des: "Developed a portfolio to showcase my skills in UI designing and Next.js",
       img: "./portfolio.png",
       iconLists: ["next.png","./re.svg", "./tail.svg", "./ts.svg",],
       link: "https://github.com/error3236/next-portfolio",
     },
-    // {
-    //   id: 4,
-    //   title: "Animated Apple Iphone 3D Website",
-    //   des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
-    //   img: "./p4.svg",
-    //   iconLists: ["./next.svg", "./tail.svg", "./ts.svg", "./three.svg", "./gsap.svg"],
-    //   link: "https://github.com/adrianhajdin/iphone",
-    // },
+   
   ];
   
   export const testimonials = [

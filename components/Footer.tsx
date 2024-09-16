@@ -5,6 +5,7 @@ import { FaLocationArrow } from "react-icons/fa"
 
 const Footer = () => {
     const sendMail = () => {
+        console.log("rtes");
         window.location.href = "mailto:sivasankar.sivakripa123@gmail.com"
     }
 
