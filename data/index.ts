@@ -93,7 +93,7 @@ export const navItems = [
     {
       id: 2,
       title: "Athena",
-      des: "Developed a machine learning model using Python and libraries like NumPy, Pandas, StandardScaler , and scikit-learn to predict diabetesbased on input data. The model was trained on a dataset of relevantfeatures to accurately classify individuals as diabetic or non-diabetic. Thisproject served as a valuable learning experience in applying machinelearning techniques to real-world problems.",
+      des: "Developed a humorous and engaging AI chatbot powered by the Gemini API. Leveraged Flutter to create a desktop application, Athena's engagingpersonality and informative responses provide a delightful user experience.The application is designed to be fully compatible with multiple operatingsystems, ensuring seamless user experience across different platforms. ",
       img: "./athena.png",
       iconLists: ["./flutter.png","./gemini.png"],
       link: "",
